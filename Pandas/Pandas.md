@@ -1367,8 +1367,6 @@ p = plt.legend(loc="best")
 
 写入文件：
 
-In [82]:
-
 ```py
 df.to_csv('foo.csv')
 
@@ -1376,14 +1374,10 @@ df.to_csv('foo.csv')
 
 从文件中读取：
 
-In [83]:
-
 ```py
 pd.read_csv('foo.csv').head()
 
 ```
-
-Out[83]:
 
 |      | Unnamed: 0 | A         | B        | C         | D         |
 | ---- | ---------- | --------- | -------- | --------- | --------- |
@@ -1397,8 +1391,6 @@ Out[83]:
 
 写入文件：
 
-In [84]:
-
 ```py
 df.to_hdf("foo.h5", "df")
 
@@ -1406,14 +1398,10 @@ df.to_hdf("foo.h5", "df")
 
 读取文件：
 
-In [85]:
-
 ```py
 pd.read_hdf('foo.h5','df').head()
 
 ```
-
-Out[85]:
 
 |            | A         | B        | C         | D         |
 | ---------- | --------- | -------- | --------- | --------- |
@@ -1427,8 +1415,6 @@ Out[85]:
 
 写入文件：
 
-In [86]:
-
 ```py
 df.to_excel('foo.xlsx', sheet_name='Sheet1')
 
@@ -1436,14 +1422,10 @@ df.to_excel('foo.xlsx', sheet_name='Sheet1')
 
 读取文件：
 
-In [87]:
-
 ```py
 pd.read_excel('foo.xlsx', 'Sheet1', index_col=None, na_values=['NA']).head()
 
 ```
-
-Out[87]:
 
 |            | A         | B        | C         | D         |
 | ---------- | --------- | -------- | --------- | --------- |
@@ -1454,8 +1436,6 @@ Out[87]:
 | 2000-01-05 | -0.165684 | 1.297303 | 0.817233  | 0.174767  |
 
 清理生成的临时文件：
-
-In [88]:
 
 ```py
 import glob
